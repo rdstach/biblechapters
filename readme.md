@@ -1,5 +1,5 @@
 # Chapther Check
-Check the existency of a bible chapter.
+A CLI that checked the existence of a bible chapter.
 
 ### Usage
 ```
