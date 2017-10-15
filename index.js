@@ -1,8 +1,7 @@
 #!/usr/bin/env node
-
-var prompt = require('prompt');
-var request = require('request');
-var cheerio = require('cheerio');
+const prompt = require('prompt');
+const request = require('request');
+const cheerio = require('cheerio');
 
 prompt.start()
 
