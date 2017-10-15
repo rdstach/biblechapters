@@ -1,6 +1,6 @@
 {
   "name": "chaptercheck",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A CLI that checked the existence of a bible chapter.",
   "main": "index.js",
   "bin": {
