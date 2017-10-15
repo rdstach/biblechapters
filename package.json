@@ -1,0 +1,25 @@
+{
+  "name": "chaptercheck",
+  "version": "0.0.1",
+  "description": "Find out the existency of a bible chapter from your CLI",
+  "main": "index.js",
+  "bin": {
+	  "chaptercheck": "index.js"
+  },
+  "scripts": {
+    "test": "node index.js"
+  },
+  "keywords": [
+    "bible",
+    "chapter",
+    "jesus",
+    "bible-cli"
+  ],
+  "author": "Roger Stach",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "prompt": "^1.0.0",
+    "request": "^2.83.0"
+  }
+}
