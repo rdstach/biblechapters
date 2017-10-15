@@ -1,6 +1,6 @@
 {
   "name": "chaptercheck",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A CLI that checked the existence of a bible chapter.",
   "main": "index.js",
   "bin": {
@@ -15,6 +15,10 @@
     "jesus",
     "bible-cli"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/klopango/chaptercheck.git"
+  },
   "author": "Roger Stach",
   "license": "MIT",
   "dependencies": {
