@@ -1,13 +1,13 @@
 # Chapther Check
 A CLI that checked the existence of a bible chapter.
 
-### Usage
+## Usage
 ```
 npm i -g chaptercheck
 chaptercheck
 ```
 
-### License
+## License
 **Chapter Check** is licensed under the MIT license.
 
 ___
