@@ -24,23 +24,18 @@ prompt.get(['book'], function (err, result) {
 				let fifthOne = '- ' + fourthOne;
 
 				chapters.push(fifthOne)
-				// chapters.replace(',', '')
-				// let final = fifthOne
 	        });
 
-			// if (result.full == total) {
-			// 	console.log(result.full + ' does exist.')
-			// } else {
-			// 	console.log(result.full + ' doesn\'t exist.')
-			// }
+			if (chapters.length = 0) {
+				print('Verses in ' + chapter);
 
-			// chapters.join(' ')
-			print('Verses in ' + chapter);
-
-			for (var i = 0; i < chapters.length; i++) {
-				print(chapters[i])
+				for (var i = 0; i < chapters.length; i++) {
+					print(chapters[i])
+				}
+			} else {
+				print('Chapter name is too long')
 			}
-			// print('\n' + chapters.length)
+
 	    } else {
 			print('Error : ' + err)
 		}
