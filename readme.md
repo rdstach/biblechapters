@@ -1,4 +1,4 @@
-# Chapther Check
+# Chapter Check
 A CLI that checked the existence of a bible chapter.
 
 ## Usage
