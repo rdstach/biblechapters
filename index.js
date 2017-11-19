@@ -3,7 +3,7 @@
 const prompt = require('prompt');
 const request = require('request');
 const cheerio = require('cheerio');
-const chalk = require('chalk'); // TODO: Chalk the text.
+const chalk = require('chalk');
 const print = console.log;
 
 prompt.start()
@@ -19,29 +19,24 @@ prompt.get(['book'], function (err, result) {
 
 	        $('span.style2 a').each(function (i, elm) {
 				let raw = $(this).text();
-				let firstOne = raw.replace('[', '');
-				let secondOne = firstOne.replace(']', '');
-				let thirdOne = secondOne.replace(' ', '');
-				let fourthOne = thirdOne.replace(',', '');
-				let fifthOne = '- ' + fourthOne;
+				let cleanStr = raw.replace('[', '').replace(']', '').replace(' ', '').replace(',', '');
+				let listedStr = '- ' + chalk.blue(cleanStr);
 
-                // TODO: Merge all string manipulation variable into one variable
-
-				chapters.push(fifthOne)
+				chapters.push(listedStr)
 	        });
 
-			if (chapters.length = 0) {
-				print('Verses in ' + chapter);
+			if (chapters.length != 0) {
+				print('Verses in ' + chalk.red(chapter));
 
 				for (var i = 0; i < chapters.length; i++) {
 					print(chapters[i])
 				}
 			} else {
-				print('Chapter name is too long')
+				print(chalk.red('Chapter name is too long'))
 			}
 
 	    } else {
-			print('Error : ' + err)
+			print(chalk.red('Error, somehow. \n Error : ' + err))
 		}
 	})
 })
