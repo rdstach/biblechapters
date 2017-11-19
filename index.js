@@ -10,6 +10,7 @@ prompt.start()
 
 prompt.get(['book'], function (err, result) {
 	let url = 'http://alkitab.mobi/tb/' + result.book
+
 	request(url, function(err, resp, body) {
 	    if(!err & resp.statusCode == 200) {
 	        const $ = cheerio.load(body);
@@ -23,6 +24,8 @@ prompt.get(['book'], function (err, result) {
 				let thirdOne = secondOne.replace(' ', '');
 				let fourthOne = thirdOne.replace(',', '');
 				let fifthOne = '- ' + fourthOne;
+
+                // TODO: Merge all string manipulation variable into one variable
 
 				chapters.push(fifthOne)
 	        });
