@@ -1,14 +1,14 @@
-# Chapter Check
-A CLI that checked the existence of a bible chapter.
+# Bible Chapters
+Bible Chapters, listed.
 
 ## Usage
 ```
-npm i -g chaptercheck
-chaptercheck
+npm i -g biblechapters
+biblechapters
 ```
 
 ## License
-**Chapter Check** is licensed under the MIT license.
+**Bible Chapters** is licensed under the MIT license.
 
 ___
 
