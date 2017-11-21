@@ -1,30 +1,29 @@
 {
-  "name": "chaptercheck",
+  "name": "biblechapters",
   "version": "1.0.1",
-  "description": "A CLI that checked the existence of a bible chapter.",
+  "description": "Bible Chapters, listed.",
   "main": "index.js",
   "bin": {
-    "chaptercheck": "index.js"
+    "biblechapters": "index.js"
   },
   "scripts": {
     "test": "node index.js"
   },
-  "keywords": [
-    "bible",
-    "chapter",
-    "jesus",
-    "bible-cli"
-  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/klopango/chaptercheck.git"
+    "url": "git+https://github.com/stach/biblechapters.git"
   },
+  "keywords": [
+    "bible",
+    "biblechapters",
+    "chapters",
+    "bible-chapters",
+    "christian"
+  ],
   "author": "Roger Stach",
   "license": "MIT",
-  "dependencies": {
-    "chalk": "^2.3.0",
-    "cheerio": "^1.0.0-rc.2",
-    "prompt": "^1.0.0",
-    "request": "^2.83.0"
-  }
+  "bugs": {
+    "url": "https://github.com/stach/biblechapters/issues"
+  },
+  "homepage": "https://github.com/stach/biblechapters#readme"
 }
