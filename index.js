@@ -5,8 +5,6 @@ const request = require('request');
 const cheerio = require('cheerio');
 const chalk = require('chalk');
 const print = console.log;
-const date = new Date();
-const tommorow = (date.getMonth() + 1) + '-' + (date.getDate() + 1);
 
 prompt.start()
 
@@ -34,10 +32,8 @@ prompt.get(['book'], function (err, result) {
 					print(chapters[i])
 				}
 
-				print('\n' + chalk.red(tommorow))
-
 			} else {
-				print(chalk.red('Chapter name is too long'))
+				print(chalk.red('An error happened. Either the chapter name is too long or the chapter you typed in was incorrect.'))
 			}
 
 	    } else {
