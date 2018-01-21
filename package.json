@@ -2,12 +2,12 @@
   "name": "biblechapters",
   "version": "1.0.2",
   "description": "A CLI & NodeJS API to print some bible chapters.",
-  "main": "index.js",
+  "main": "src/index.js",
   "bin": {
-    "chapters": "index.js"
+    "chapters": "src/index.js"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node src/index.js"
   },
   "repository": {
     "type": "git",
