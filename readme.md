@@ -20,4 +20,4 @@ chapters("kejadian")
 
 ___
 
-## © 2017 Roger Stach
+## © 2017-2018 Roger Stach
