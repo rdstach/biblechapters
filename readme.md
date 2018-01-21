@@ -1,5 +1,5 @@
 # Bible Chapters
-A CLI & NodeJS api to print some bible chapters.
+A CLI & NodeJS API to print some bible chapters.
 
 > I use the indonesian version while making this module.
 
