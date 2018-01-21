@@ -1,43 +1,39 @@
 #!/usr/bin/env node
 
-const prompt = require('prompt');
 const request = require('request');
 const cheerio = require('cheerio');
-const chalk = require('chalk');
 const print = console.log;
 
-prompt.start()
-
-prompt.get(['book'], function (err, result) {
-	let url = 'http://alkitab.mobi/tb/' + result.book
+function getChapters(chapter) {
+	let url = 'http://alkitab.mobi/tb/' + chapter;
 
 	request(url, function(err, resp, body) {
-	    if(!err & resp.statusCode == 200) {
-	        const $ = cheerio.load(body);
+		if (!err & resp.statusCode == 200) {
+			const $ = cheerio.load(body);
 			const chapter = $('span.style1 strong').eq(-1).text()
 			let chapters = [];
 
-	        $('span.style2 a').each(function (i) {
+			$('span.style2 a').each(function (i) {
 				let raw = $(this).text();
 				let cleanStr = raw.replace('[', '').replace(']', '').replace(' ', '').replace(',', '');
-				let listedStr = '- ' + chalk.blue(cleanStr);
 
-				chapters.push(listedStr)
-	        });
+				chapters.push(cleanStr)
+			});
 
 			if (chapters.length != 0) {
-				print('Verses in ' + chalk.red(chapter));
+				print('Verses in ' + chapter);
 
 				for (var i = 0; i < chapters.length; i++) {
 					print(chapters[i])
 				}
 
 			} else {
-				print(chalk.red('An error happened.'))
+				print('An error happened.')
 			}
-
-	    } else {
-			print(chalk.red('Error, somehow. \n Error : ' + err))
+		} else {
+			print('Error. \n Error : ' + err)
 		}
 	})
-})
+}
+
+module.exports = getChapters;
