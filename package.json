@@ -4,7 +4,7 @@
   "description": "Bible Chapters, listed.",
   "main": "index.js",
   "bin": {
-    "biblechapters": "index.js"
+    "chapters": "index.js"
   },
   "scripts": {
     "test": "node index.js"
