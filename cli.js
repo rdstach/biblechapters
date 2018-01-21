@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const api = require('./index.js')
+const api = require('./index.js');
 const prompt = require('prompt');
 const print = console.log;
 
