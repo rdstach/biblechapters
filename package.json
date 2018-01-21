@@ -27,7 +27,6 @@
   },
   "homepage": "https://github.com/stach/biblechapters#readme",
   "dependencies": {
-    "chalk": "^2.3.0",
     "cheerio": "^1.0.0-rc.2",
     "prompt": "^1.0.0",
     "request": "^2.83.0"
