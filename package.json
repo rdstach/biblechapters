@@ -1,13 +1,13 @@
 {
   "name": "biblechapters",
-  "version": "1.0.1beta",
-  "description": "Bible Chapters, listed.",
-  "main": "index.js",
+  "version": "1.0.2",
+  "description": "A CLI & NodeJS API to print some bible chapters.",
+  "main": "src/index.js",
   "bin": {
-    "biblechapters": "index.js"
+    "chapters": "src/cli.js"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node src/index.js"
   },
   "repository": {
     "type": "git",
@@ -17,8 +17,8 @@
     "bible",
     "biblechapters",
     "chapters",
-    "bible-chapters",
-    "christian"
+    "christian",
+    "christians"
   ],
   "author": "Roger Stach",
   "license": "MIT",
@@ -27,7 +27,6 @@
   },
   "homepage": "https://github.com/stach/biblechapters#readme",
   "dependencies": {
-    "chalk": "^2.3.0",
     "cheerio": "^1.0.0-rc.2",
     "prompt": "^1.0.0",
     "request": "^2.83.0"

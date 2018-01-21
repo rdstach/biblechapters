@@ -1,10 +1,18 @@
 # Bible Chapters
-Bible Chapters, listed.
+A CLI & NodeJS API to print some bible chapters.
 
-## Usage
+> I use the indonesian version while making this module.
+
+## CLI Usage
 ```
 npm i -g biblechapters
-biblechapters
+chapters
+```
+
+## API
+```javascript
+const chapters = require('biblechapters');
+chapters("kejadian")
 ```
 
 ## License
