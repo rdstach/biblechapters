@@ -4,7 +4,7 @@
   "description": "A CLI & NodeJS API to print some bible chapters.",
   "main": "src/index.js",
   "bin": {
-    "chapters": "src/index.js"
+    "chapters": "src/cli.js"
   },
   "scripts": {
     "start": "node src/index.js"
