@@ -17,7 +17,7 @@ prompt.get(['book'], function (err, result) {
 			const chapter = $('span.style1 strong').eq(-1).text()
 			let chapters = [];
 
-	        $('span.style2 a').each(function (i, elm) {
+	        $('span.style2 a').each(function (i) {
 				let raw = $(this).text();
 				let cleanStr = raw.replace('[', '').replace(']', '').replace(' ', '').replace(',', '');
 				let listedStr = '- ' + chalk.blue(cleanStr);
