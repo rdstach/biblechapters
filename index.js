@@ -21,7 +21,7 @@ function getChapters(chapter) {
 			});
 
 			if (chapters.length != 0) {
-				print('Verses in ' + chapter);
+				print('Verses in ' + chapter + '\n');
 
 				for (var i = 0; i < chapters.length; i++) {
 					print(chapters[i])
