@@ -33,7 +33,7 @@ prompt.get(['book'], function (err, result) {
 				}
 
 			} else {
-				print(chalk.red('An error happened. Either the chapter name is too long or the chapter you typed in was incorrect.'))
+				print(chalk.red('An error happened.'))
 			}
 
 	    } else {
