@@ -1,6 +1,6 @@
 {
   "name": "biblechapters",
-  "version": "1.0.1beta",
+  "version": "1.0.2",
   "description": "A CLI & NodeJS API to print some bible chapters.",
   "main": "index.js",
   "bin": {
