@@ -1,12 +1,16 @@
 #!/usr/bin/env node
 
-const api = require('./index.js');
 const prompt = require('prompt');
+const api = require('./index.js');
 const print = console.log;
 
-prompt.start()
+prompt.start();
 
 prompt.get(['book'], function (err, result) {
-	let final = api(result.book);
+	if (!err) {
+		var final = api(result.book);
+	} else {
+		print('Error : ', err);
+	}
 	return final;
-})
+});
